@@ -1,0 +1,4 @@
+(i) it would take a few hours.
+(ii) we deduce that mission  automization is a good idea! we might use this concept to find relevant academic articles to a project, or to analyze monthly bills. 
+(iii) we would've had to use an external  bash script that launches scraped_news.sh once an hour. we'd redirect the output to the same result.csv file and run it thrugh sort | uniq. 
+
