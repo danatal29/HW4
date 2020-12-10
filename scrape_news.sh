@@ -1,14 +1,14 @@
 #!/bin/bash
 
 ynet="https://www.ynetnews.com/category/3082"
-article="https://www.ynetnews.com/article/[0-9a-zA-Z]{9}"
+article="https://www.ynetnews.com/article/[0-9a-zA-Z]{9}(?=\")"
 
 bibi="Netanyahu"
 benny="Gantz"
 web_page="3082"
 
 wget $ynet
-grep -o -E $article $web_page | sort | uniq >> article_links.txt
+grep -oP $article $web_page | sort | uniq >> article_links.txt
 rm $web_page
 
 wc -l < article_links.txt >> results.csv
